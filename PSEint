@@ -1,1 +1,37 @@
+Algoritmo Calcula_IMC_Switch
+  Definir peso, altura, imc Como Real
+	Definir opc Como Logico
+	opc<-Verdadero
+    Escribir "Ingrese su peso (kg): "
+    Leer peso
+    Escribir "Ingrese su altura (m): "
+    Leer altura
+	
+    Si peso >= 5 y peso <= 450 Entonces
+        Si altura >= 0.6 y altura <= 2.5 Entonces
+            imc <- peso / (altura^2)
+            Escribir "Tu IMC es: ", imc
+			
+            Segun opc Hacer
+					// Bajo peso
+                Caso imc < 18.5:
+                    Escribir "Su diagnóstico es Bajo Peso"
+					// Peso normal
+                Caso imc >= 18.5 y imc < 25:
+                    Escribir "Su diagnóstico es Peso Normal"
+					// Sobrepeso
+                Caso imc >= 25 y imc < 30:
+                    Escribir "Su diagnóstico es Sobrepeso"
+					// Obesidad
+                Caso imc >= 30:
+                    Escribir "Su diagnóstico es Obesidad"
+            FinSegun
+			
+        SiNo
+            Escribir "Altura no válida"
+        FinSi
+    SiNo
+        Escribir "Peso no válido"
+    FinSi
+FinAlgoritmo
 
