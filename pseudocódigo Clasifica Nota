@@ -1,1 +1,19 @@
-
+Algoritmo ClasificaNota
+    Definir nota Como Real
+    Escribir "Ingrese la nota del estudiante (0-20): "
+    Leer nota
+    //Se valida ingreso de la nota
+    Si nota < 0 O nota > 20 Entonces
+        Escribir "Error: La nota debe estar entre 0 y 20."
+    Sino
+        Si nota == 20 Entonces
+            Escribir "¡Excelente!"
+        Sino
+            Si nota >= 11 Entonces
+                Escribir "Aprobado"
+            Sino
+                Escribir "Desaprobado"
+            FinSi
+        FinSi
+    FinSi
+FinAlgoritmo
