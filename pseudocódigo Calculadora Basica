@@ -1,1 +1,36 @@
+Algoritmo Calculadora
+	Escribir "Calculadora Básica"
+	Escribir" Menú de Operaciones"
+	Escribir "1 = Suma"
+	Escribir "2 = Resta"
+	Escribir "3 = Multiplicación"
+	Escribir "4 = División"
+	Escribir " "
+	Escribir "Ingrese primer número: "
+	Leer a
+	Escribir "Ingrese segundo número: "
+	Leer b
+	Escribir "Ingrese su opción: "
+	Leer opc
+	Segun opc Hacer
+		1:
+			resultado = a + b
+			Escribir "Resultado de la suma: ", resultado
+		2:
+			resultado = a - b
+			Escribir "Resultado de la resta: ", resultado
+		3:
+			resultado = a * b
+			Escribir "Resultado de la multiplicación: ", resultado
+		4:
+			Si b > 0 entonces
+				resultado = a / b
+				Escribir "Resultado de la división: ", resultado
+			SiNo
+				Escribir "La división entre 0 es indefinida"
+			FinSi			
+		De Otro Modo:
+			Escribir "Opción invalida. Elegir entre 1 y 4" 
+	FinSegun
+FinAlgoritmo
 
